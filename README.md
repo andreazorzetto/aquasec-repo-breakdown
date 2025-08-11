@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ### Prerequisites
 
 - **Authentication**: This utility requires username/password authentication to connect to Aqua Security platform
-- **Python library**: The `aquasec` library must be installed:
+- **Python library**: The `aquasec` library v0.4.0+ must be installed (v0.1.1 requires compatibility updates):
 
 ```bash
 pip install aquasec

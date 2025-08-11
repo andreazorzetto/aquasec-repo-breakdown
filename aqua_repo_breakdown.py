@@ -38,7 +38,7 @@ from aquasec import (
 )
 
 # Version
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def build_repository_scope_map(server, token, verbose=False, debug=False):
@@ -75,7 +75,7 @@ def build_repository_scope_map(server, token, verbose=False, debug=False):
     
     # Step 2: Get all application scopes (excluding Global)
     try:
-        all_scopes = get_app_scopes(server, token)
+        all_scopes = get_app_scopes(server, token, debug)
         app_scopes = [s for s in all_scopes if s.get("name") != "Global"]
         
         if verbose:
